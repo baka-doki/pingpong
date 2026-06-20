@@ -6,6 +6,10 @@ PingPong 是一个 Windows 桌面小工具，用来并发测试 YouTube、ChatGP
 
 双击 `Start PingPong.bat` 启动。
 
+关闭窗口后，PingPong 会继续在右下角托盘运行。双击托盘小图标可以重新打开界面，右键托盘小图标选择“退出”才会结束程序。
+
+最近一轮检测全部连通时，托盘图标会显示为绿色；部分不可访问时显示为黄色；全部不可访问时显示为红色。
+
 ## 说明
 
 这里测试的是 HTTPS 连通延迟，不是传统 ICMP ping。YouTube、ChatGPT 和 Claude 这类网站可能不响应普通 ping，但只要能收到 HTTP 响应，就说明当前网络或 VPN 已经能连到对应服务。
